@@ -18,8 +18,5 @@
   "presets": [
     "next/babel"
   ],
-  "ignore": [],
-  "experimental": {
-    "forceSwcTransforms": true
-  }
+  "ignore": []
 }
