@@ -3,13 +3,13 @@ import PropTypes from 'prop-types';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faTwitter, faFacebook, faInstagram, faGithub} from '@fortawesome/fontawesome-free-brands';
 
-const Main = ({route, article, articleTimeout, onCloseArticle, timeout}) => {
-  let close = <div className="close" onClick={() => {onCloseArticle()}}></div>
+const Main = (props) => {
+  let close = <div className="close" onClick={() => {props.onCloseArticle()}}></div>
 
   return (
-    <div id="main" style={timeout ? {display: 'flex'} : {display: 'none'}}>
+    <div id="main" style={props.timeout ? {display: 'flex'} : {display: 'none'}}>
 
-      <article id="intro" className={`${article === 'intro' ? 'active' : ''} ${articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
+      <article id="intro" className={`${props.article === 'intro' ? 'active' : ''} ${props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
         <h2 className="major">Intro</h2>
         <span className="image main"><img src="/static/images/pic01.jpg" alt="" /></span>
         <p>Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin aliquam facilisis ante interdum congue. Integer mollis, nisl amet convallis, porttitor magna ullamcorper, amet egestas mauris. Ut magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas. By the way, check out my <a href="#work">awesome work</a>.</p>
@@ -17,7 +17,7 @@ const Main = ({route, article, articleTimeout, onCloseArticle, timeout}) => {
         {close}
       </article>
 
-      <article id="work" className={`${article === 'work' ? 'active' : ''} ${articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
+      <article id="work" className={`${props.article === 'work' ? 'active' : ''} ${props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
         <h2 className="major">Work</h2>
         <span className="image main"><img src="/static/images/pic02.jpg" alt="" /></span>
         <p>Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices.</p>
@@ -25,14 +25,14 @@ const Main = ({route, article, articleTimeout, onCloseArticle, timeout}) => {
         {close}
       </article>
 
-      <article id="about" className={`${article === 'about' ? 'active' : ''} ${articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
+      <article id="about" className={`${props.article === 'about' ? 'active' : ''} ${props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
         <h2 className="major">About</h2>
         <span className="image main"><img src="/static/images/pic03.jpg" alt="" /></span>
         <p>Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices. Aliquam libero et malesuada fames ac ante ipsum primis in faucibus. Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit amet.</p>
         {close}
       </article>
 
-      <article id="contact" className={`${article === 'contact' ? 'active' : ''} ${articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
+      <article id="contact" className={`${props.article === 'contact' ? 'active' : ''} ${props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
         <h2 className="major">Contact</h2>
         <form method="post" action="#">
           <div className="field half first">
