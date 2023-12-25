@@ -68,6 +68,24 @@ const IndexPage = () => {
             </div>
         </div>
     );
+    // return (
+    //     <div className={`body ${loading}`}>
+    //         <Head>
+    //             <title>Next.js Starter</title>
+    //             <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,600,600i" rel="stylesheet" />
+    //         </Head>
+
+    //         <style dangerouslySetInnerHTML={{ __html: stylesheet }} />
+
+    //         <div id="wrapper">
+    //             <Header />
+    //             {/* Main component can be removed if it's no longer used */}
+    //             <Footer />
+    //         </div>
+
+    //         <div id="bg" />
+    //     </div>
+    // );
 };
 
 
