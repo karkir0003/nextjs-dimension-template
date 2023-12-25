@@ -28,13 +28,14 @@ jobs:
         key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
         restore-keys: |
           ${{ runner.os }}-node-
-
-    - name: Lint
-      run: npm run lint 
-      working-directory: ./
     
     - name: Install dependencies
       run: npm install
+    
+    
+    - name: Lint
+      run: npm run lint 
+      working-directory: ./
 
     - name: Build
       run: npm run build
