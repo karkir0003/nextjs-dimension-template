@@ -39,6 +39,7 @@ Continuous Integration (CI) and Continuous Deployment (CD) is a very important b
 1. Create an account in Vercel
 2. Create a Vercel project
 3. Add the required Vercel Secrets in GitHub through the following ([source](https://vercel.com/guides/how-can-i-use-github-actions-with-vercel#configuring-github-actions-for-vercel)):
+
    a. `VERCEL_TOKEN`: Get the Vercel Token through [these instructions](https://vercel.com/guides/how-do-i-use-a-vercel-api-access-token). Make sure to copy this token into Github Secrets as per this [doc](https://docs.github.com/en/actions/security-guides/using-secrets-in-github-actions#creating-secrets-for-a-repository)
 
    b. Install [Vercel CLI](https://vercel.com/cli) and run `vercel login`
