@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "next",
+    "lint": "next lint",
     "build": "next build",
     "start": "next start",
     "export": "next build && next export"
@@ -38,5 +39,9 @@
     "react-dom": "^18.2.0",
     "sass": "^1.22.10",
     "sass-loader": "^7.2.0"
+  },
+  "devDependencies": {
+    "eslint": "8.56.0",
+    "eslint-config-next": "14.0.4"
   }
 }
