@@ -40,9 +40,13 @@ Continuous Integration (CI) and Continuous Deployment (CD) is a very important b
 2. Create a Vercel project
 3. Add the required Vercel Secrets in GitHub through the following ([source](https://vercel.com/guides/how-can-i-use-github-actions-with-vercel#configuring-github-actions-for-vercel)):
    a. `VERCEL_TOKEN`: Get the Vercel Token through [these instructions](https://vercel.com/guides/how-do-i-use-a-vercel-api-access-token). Make sure to copy this token into Github Secrets as per this [doc](https://docs.github.com/en/actions/security-guides/using-secrets-in-github-actions#creating-secrets-for-a-repository)
+
    b. Install [Vercel CLI](https://vercel.com/cli) and run `vercel login`
+
    c. `cd nextjs-dimension-template` and run `vercel link`. Note that `.vercel` folder created from `vercel link` is in the `.gitignore`. You should see a file called `project.json` under `.vercel/` folder. **NOTE: You should link to the existing project you created in Vercel console when running `vercel link`**
+
    d. Populate the `VERCEL_PROJECT_ID` secret in GitHub using the `projectId` field from `.vercel/project.json`
+   
    e. Populate the `VERCEL_ORG_ID` secret in GitHub using the `orgId` field from `.vercel/project.json`
 4. Check the deploy for your project to see if the template is visible
 5. **OPTIONAL:** If you want to set a custom domain, follow these [docs](https://vercel.com/docs/projects/domains/add-a-domain)
