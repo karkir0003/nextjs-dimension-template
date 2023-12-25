@@ -8,12 +8,6 @@ on:
     workflows: ["Build CI"]
     types:
       - completed
-  push:
-    branches-ignore:
-      - main
-  pull_request:
-    branches:
-      - main
 jobs:
   Deploy-Preview:
     runs-on: ubuntu-latest
