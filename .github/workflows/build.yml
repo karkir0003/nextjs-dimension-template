@@ -37,4 +37,3 @@ jobs:
 
     - name: Run depcheck
       run: npx depcheck --ignore-bin-package
-      working-directory: ./frontend
