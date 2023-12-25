@@ -51,3 +51,6 @@ Continuous Integration (CI) and Continuous Deployment (CD) is a very important b
    e. Populate the `VERCEL_ORG_ID` secret in GitHub using the `orgId` field from `.vercel/project.json`
 4. Check the deploy for your project to see if the template is visible
 5. **OPTIONAL:** If you want to set a custom domain, follow these [docs](https://vercel.com/docs/projects/domains/add-a-domain)
+
+## Contributing
+We are very glad to hear that you'd like to help contribute to keeping this repo well-maintained, up to date and best of all, exercise your software engineering skills. Please make sure to setup the repo using the above instructions. You can also see the open items to tackle [here](https://github.com/karkir0003/nextjs-dimension-template/issues) or fix up anything that could be better. Please make pull requests so that we can track the changes to the repo. Happy developing!
