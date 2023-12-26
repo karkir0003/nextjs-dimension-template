@@ -26,16 +26,16 @@ const Contact = () => {
             </form>
             <ul className="icons">
             <li><a href="#">
-                <FontAwesomeIcon icon={faTwitter} />
+                <FontAwesomeIcon className="fa-icon" icon={faTwitter} />
             </a></li>
             <li><a href="#">
-                <FontAwesomeIcon icon={faFacebook} />
+                <FontAwesomeIcon className="fa-icon" icon={faFacebook} />
             </a></li>
             <li><a href="#">
-                <FontAwesomeIcon icon={faInstagram} />
+                <FontAwesomeIcon className="fa-icon" icon={faInstagram} />
             </a></li>
             <li><a href="#">
-                <FontAwesomeIcon icon={faGithub} />
+                <FontAwesomeIcon className="fa-icon" icon={faGithub} />
             </a></li>
             </ul>
         </>
